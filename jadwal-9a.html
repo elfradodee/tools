@@ -1,436 +1,151 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jadwal Pelajaran 9A</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-	<style>
-	.text-left { text-align:left; margin-left:10vw; }
-	thead { font-weight:bold; background:#f2f2f2; text-align:center;}
-	h3 { text-align:center; }
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelajaran 9A</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/cello/jadwal.css" rel="stylesheet">
+    <link href="assets/plugins/icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="" class="navbar-brand d-flex align-items-center">
-        <i class="bi bi-calendar3"></i> &nbsp;
-        <strong>Jadwal Pelajaran 9A</strong>
-      </a>
-    </div>
-  </div>
-</header>
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="" class="navbar-brand d-flex align-items-center">
+                    <i class="bi bi-calendar3"></i> &nbsp;
+                    <strong>Jadwal Pelajaran 9A</strong>
+                </a>
+            </div>
+        </div>
+    </header>
 
-<main>
+    <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1>Jadwal Pelajaran</h1>
-        <p class="lead text-muted">
-      		<li class="text-left"><strong>PJJ:</strong> Senin, Rabu, Jumat</li>
-      		<li class="text-left"><strong>PTMT:</strong> Selasa, Kamis</li>
-        </p>
-        <p>
-        	<a href="" class="btn btn-success col-6" id="hariIni">Lihat Jadwal Hari Ini</a><br>
-          <a href="#1" class="btn btn-primary my-2">Minggu 1 & 3</a>
-          <a href="#2" class="btn btn-secondary my-2">Minggu 2 & 4</a>
-        </p>
-      </div>
-    </div>
-  </section>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1>Jadwal Pelajaran</h1>
+                    <p class="lead text-muted">
+                        <li class="text-left"><strong>PTM:</strong> Senin, Rabu, Jumat</li>
+                        <li class="text-left"><strong>PJJ:</strong> Selasa, Kamis</li>
+                    </p>
+                    <p>
+                        <a href="#hariIni" class="btn btn-success col-6">Lihat Jadwal Hari Ini</a><br>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <div class="album py-5 bg-light">
-    <div class="container">
+        <div class="album py-5 bg-light" id="hariIni">
+            <div class="container">
 
-    	<h3 id="1">Minggu 1 & 3</h3>
-    	<span id="3"></span>
-      <div class="row g-3 mb-5">
-        <div class="col">
-          <div class="card shadow-sm">
-            <div class="card-body">
-            	
-            	<div class="row">
+                <div class="row g-3 mb-5">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="table-responsive">
+    
+                                    <table class="table table-bordered table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>Waktu</th>
+                                                <th>Senin</th>
+                                                <th>Selasa</th>
+                                                <th>Rabu</th>
+                                                <th>Kamis</th>
+                                                <th>Jumat</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody align="center">
+                                            <tr>
+                                                <th scope="row">07.00 - 07.15</th>
+                                                <td colspan="5">Doa Sabda</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">07.20 - 07.55</th>
+                                                <td>Fisika</td>
+                                                <td rowspan="2">Bahasa Indonesia</td>
+                                                <td>Matematika</td>
+                                                <td>Biologi</td>
+                                                <td>Literasi</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">08.00 - 08.35</th>
+                                                <td>Biologi</td>
+                                                <td>Bahasa Daerah</td>
+                                                <td>Fisika</td>
+                                                <td>Agama</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">08.40 - 09.15</th>
+                                                <td>PPKn</td>
+                                                <td rowspan="3">Matematika</td>
+                                                <td>IPS</td>
+                                                <td>Bahasa Indonesia</td>
+                                                <td>PPKn</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">09.15 - 09.30</th>
+                                                <td colspan="5">Istirahat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">09.30 - 10.05</th>
+                                                <td>Agama</td>
+                                                <td colspan="2">Seni Budaya</td>
+                                                <td>IPS</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10.10 - 10.45</th>
+                                                <td>Bahasa Inggris</td>
+                                                <td colspan="2">PJOK</td>
+                                                <td rowspan="2">Prakarya</td>
+                                                <td>Bahasa Inggris</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10.50 - 11.25</th>
+                                                <td>Bahasa Indonesia</td>
+                                                <td>Bahasa Inggris</td>
+                                                <td>BK</td>
+                                                <td>Binar + WK</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
-            		<div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Senin</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.15 - 07.55</td>
-		            			<td rowspan="2">Seni Budaya</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.05 - 08.45</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.55 - 09.35</td>
-		            			<td rowspan="2">Agama</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.05 - 10.45</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.55 - 11.35</td>
-		            			<td rowspan="2">Bahasa Indonesia</td>
-		            		</tr>
-		            		<tr>
-		            			<td>11.45 - 12.30</td>
-		            		</tr>
-		            	</table>
-		            </div>
+                                </div>
 
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Selasa</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.20 - 07.55</td>
-		            			<td rowspan="2">Fisika</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.00 - 08.35</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.40 - 09.15</td>
-		            			<td rowspan="2">Prakarya</td>
-		            		</tr>
-		            		<tr>
-		            			<td>09.30 - 10.05</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.10 - 10.45</td>
-		            			<td>BK</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.50 - 11.25</td>
-		            			<td>Bahasa Daerah</td>
-		            		</tr>
-		            	</table>
-		            </div>
-
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Rabu</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.15 - 07.55</td>
-		            			<td rowspan="2">Bahasa Indonesia</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.05 - 08.45</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.55 - 09.35</td>
-		            			<td>IPS</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.05 - 10.45</td>
-		            			<td>Bahasa Inggris</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.55 - 11.35</td>
-		            			<td rowspan="2">Biologi</td>
-		            		</tr>
-		            		<tr>
-		            			<td>11.45 - 12.30</td>
-		            		</tr>
-		            	</table>
-		            </div>
-
-		            <div class="col-md-2"></div>
-
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Kamis</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.20 - 07.55</td>
-		            			<td rowspan="2">Matematika</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.00 - 08.35</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.40 - 09.15</td>
-		            			<td rowspan="2">PJOK</td>
-		            		</tr>
-		            		<tr>
-		            			<td>09.30 - 10.05</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.10 - 10.45</td>
-		            			<td rowspan="2">Bahasa Inggris</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.50 - 11.25</td>
-		            		</tr>
-		            	</table>
-		            </div>
-
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Jumat</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.15 - 08.25</td>
-		            			<td>Literasi WK</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.35 - 09.15</td>
-		            			<td>IPS</td>
-		            		</tr>
-		            		<tr>
-		            			<td>09.25 - 10.05</td>
-		            			<td>Matematika</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.35 - 11.15</td>
-		            			<td rowspan="2">PPKn</td>
-		            		</tr>
-		            		<tr>
-		            			<td>11.25 - 12.10</td>
-		            		</tr>
-		            		<tr>
-		            			<td>12.20 - 13.00</td>
-		            			<td>Binar</td>
-		            		</tr>
-		            	</table>
-		            </div>
-
-	            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-          </div>
         </div>
-      </div>
 
-      <h3 id="2">Minggu 2 & 4</h3>
-      <span id="4"></span>
-      <div class="row g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <div class="card-body">
-            	<div class="row">
-            		<div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Senin</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.15 - 07.55</td>
-		            			<td rowspan="2">PJOK</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.05 - 08.45</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.55 - 09.35</td>
-		            			<td rowspan="2">Prakarya</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.05 - 10.45</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.55 - 11.35</td>
-		            			<td rowspan="2">Fisika</td>
-		            		</tr>
-		            		<tr>
-		            			<td>11.45 - 12.30</td>
-		            		</tr>
-		            	</table>
-		            </div>
+    </main>
 
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Selasa</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.20 - 07.55</td>
-		            			<td rowspan="2">Biologi</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.00 - 08.35</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.40 - 09.15</td>
-		            			<td rowspan="2">IPS</td>
-		            		</tr>
-		            		<tr>
-		            			<td>09.30 - 10.05</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.10 - 10.45</td>
-		            			<td rowspan="2">PPKN</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.50 - 11.25</td>
-		            		</tr>
-		            	</table>
-		            </div>
-
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Rabu</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.15 - 07.55</td>
-		            			<td rowspan="2">Bahasa Indonesia</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.05 - 08.45</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.55 - 09.35</td>
-		            			<td rowspan="2">Bahasa Inggris</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.05 - 10.45</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.55 - 11.35</td>
-		            			<td rowspan="2">Matematika</td>
-		            		</tr>
-		            		<tr>
-		            			<td>11.45 - 12.30</td>
-		            		</tr>
-		            	</table>
-		            </div>
-
-		            <div class="col-md-2"></div>
-
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Kamis</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.20 - 07.55</td>
-		            			<td rowspan="2">Seni Budaya</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.00 - 08.35</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.40 - 09.15</td>
-		            			<td rowspan="2">Bahasa Indonesia</td>
-		            		</tr>
-		            		<tr>
-		            			<td>09.30 - 10.05</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.10 - 10.45</td>
-		            			<td rowspan="2">Agama</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.50 - 11.25</td>
-		            		</tr>
-		            	</table>
-		            </div>
-
-		            <div class="col-md-4">
-		            	<table class="table table-bordered">
-		            		<thead>
-		            			<tr>
-		            				<td>Waktu</td>
-		            				<td>Hari Jumat</td>
-		            			</tr>
-		            		</thead>
-		            		<tr>
-		            			<td>07.15 - 08.25</td>
-		            			<td>Literasi WK</td>
-		            		</tr>
-		            		<tr>
-		            			<td>08.35 - 09.15</td>
-		            			<td>Bahasa Daerah</td>
-		            		</tr>
-		            		<tr>
-		            			<td>09.25 - 10.05</td>
-		            			<td>Bahasa Inggris</td>
-		            		</tr>
-		            		<tr>
-		            			<td>10.35 - 11.15</td>
-		            			<td>Matematika</td>
-		            		</tr>
-		            		<tr>
-		            			<td>11.25 - 12.10</td>
-		            			<td>BK</td>
-		            		</tr>
-		            		<tr>
-		            			<td>12.20 - 13.00</td>
-		            			<td>Binar</td>
-		            		</tr>
-		            	</table>
-		            </div>
-	            </div>
-            </div>
-          </div>
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <a href="https://elfrado.dev/" target="_blank" class="mb-1">Developer</a>
         </div>
-      </div>
+    </footer>
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/plugins/jquery-doublescroll/jquery.doubleScroll.js"></script>
 
-    </div>
-  </div>
-
-</main>
-
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <a href="https://elfrado.dev/" target="_blank" class="mb-1">Developer</a>
-  </div>
-</footer>
-
-<script>
-	
-	var d = new Date();
-	var date = d.getDate();
-	var day = d.getDay();
-
-	var weekOfMonth = Math.ceil((date - 1 - day) / 7);
-	document.getElementById('hariIni').href = "#" + weekOfMonth;
-
-</script>
+    <script>
+        $(document).ready(function(){
+            $('.table-responsive').doubleScroll();
+        });
+    </script>
 
 </body>
+
 </html>
